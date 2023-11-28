@@ -8,8 +8,8 @@ use Saloon\Http\Response;
 
 class Account extends Resource
 {
-	public function accountBaseDataGet(): Response
-	{
-		return $this->connector->send(new AccountBaseDataGet());
-	}
+    public function accountBaseDataGet(): Response
+    {
+        return $this->connector->send(new AccountBaseDataGet());
+    }
 }

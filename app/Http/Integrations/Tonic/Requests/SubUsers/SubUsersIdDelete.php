@@ -2,7 +2,6 @@
 
 namespace App\Http\Integrations\Tonic\Requests\SubUsers;
 
-use DateTime;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
 
@@ -13,20 +12,18 @@ use Saloon\Http\Request;
  */
 class SubUsersIdDelete extends Request
 {
-	protected Method $method = Method::DELETE;
+    protected Method $method = Method::DELETE;
 
+    public function resolveEndpoint(): string
+    {
+        return "/subUsers/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/subUsers/{$this->id}";
-	}
-
-
-	/**
-	 * @param int $id The id of the SubUser to delete
-	 */
-	public function __construct(
-		protected int $id,
-	) {
-	}
+    /**
+     * @param  int  $id The id of the SubUser to delete
+     */
+    public function __construct(
+        protected int $id,
+    ) {
+    }
 }

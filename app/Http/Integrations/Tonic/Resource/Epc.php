@@ -9,14 +9,13 @@ use Saloon\Http\Response;
 
 class Epc extends Resource
 {
-	public function epcLastFinalDateGet(): Response
-	{
-		return $this->connector->send(new EpcLastFinalDateGet());
-	}
+    public function epcLastFinalDateGet(): Response
+    {
+        return $this->connector->send(new EpcLastFinalDateGet());
+    }
 
-
-	public function epcEstimationUpdateUntilGet(): Response
-	{
-		return $this->connector->send(new EpcEstimationUpdateUntilGet());
-	}
+    public function epcEstimationUpdateUntilGet(): Response
+    {
+        return $this->connector->send(new EpcEstimationUpdateUntilGet());
+    }
 }

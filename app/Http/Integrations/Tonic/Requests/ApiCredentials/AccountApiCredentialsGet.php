@@ -2,7 +2,6 @@
 
 namespace App\Http\Integrations\Tonic\Requests\ApiCredentials;
 
-use DateTime;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
 
@@ -13,16 +12,14 @@ use Saloon\Http\Request;
  */
 class AccountApiCredentialsGet extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return '/account/apiCredentials';
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/account/apiCredentials";
-	}
-
-
-	public function __construct()
-	{
-	}
+    public function __construct()
+    {
+    }
 }

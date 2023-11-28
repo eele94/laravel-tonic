@@ -2,7 +2,6 @@
 
 namespace App\Http\Integrations\Tonic\Requests\Epc;
 
-use DateTime;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
 
@@ -13,16 +12,14 @@ use Saloon\Http\Request;
  */
 class EpcLastFinalDateGet extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return '/epc/lastFinalDate';
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/epc/lastFinalDate";
-	}
-
-
-	public function __construct()
-	{
-	}
+    public function __construct()
+    {
+    }
 }

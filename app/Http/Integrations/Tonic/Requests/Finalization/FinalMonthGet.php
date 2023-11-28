@@ -2,7 +2,6 @@
 
 namespace App\Http\Integrations\Tonic\Requests\Finalization;
 
-use DateTime;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
 
@@ -13,26 +12,23 @@ use Saloon\Http\Request;
  */
 class FinalMonthGet extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return '/final/month';
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/final/month";
-	}
+    /**
+     * @param  string  $month Month in the format yyyy-mm.
+     */
+    public function __construct(
+        protected string $month,
+    ) {
+    }
 
-
-	/**
-	 * @param string $month Month in the format yyyy-mm.
-	 */
-	public function __construct(
-		protected string $month,
-	) {
-	}
-
-
-	public function defaultQuery(): array
-	{
-		return array_filter(['month' => $this->month]);
-	}
+    public function defaultQuery(): array
+    {
+        return array_filter(['month' => $this->month]);
+    }
 }

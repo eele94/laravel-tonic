@@ -27,66 +27,55 @@ class Tonic extends Connector
         return 'https://api.publisher.tonic.com/v4';
     }
 
-
     public function account(): Account
     {
         return new Account($this);
     }
-
 
     public function apiCredentials(): ApiCredentials
     {
         return new ApiCredentials($this);
     }
 
-
     public function authorization(): Authorization
     {
         return new Authorization($this);
     }
-
 
     public function compliance(): Compliance
     {
         return new Compliance($this);
     }
 
-
     public function countries(): Countries
     {
         return new Countries($this);
     }
-
 
     public function epc(): Epc
     {
         return new Epc($this);
     }
 
-
     public function finalization(): Finalization
     {
         return new Finalization($this);
     }
-
 
     public function keywords(): Keywords
     {
         return new Keywords($this);
     }
 
-
     public function offers(): Offers
     {
         return new Offers($this);
     }
 
-
     public function subUserRoles(): SubUserRoles
     {
         return new SubUserRoles($this);
     }
-
 
     public function subUsers(): SubUsers
     {

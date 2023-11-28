@@ -8,8 +8,8 @@ use Saloon\Http\Response;
 
 class Offers extends Resource
 {
-	public function offersGet(): Response
-	{
-		return $this->connector->send(new OffersGet());
-	}
+    public function offersGet(): Response
+    {
+        return $this->connector->send(new OffersGet());
+    }
 }

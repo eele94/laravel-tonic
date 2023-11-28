@@ -8,8 +8,8 @@ use Saloon\Http\Response;
 
 class Countries extends Resource
 {
-	public function countriesGet(): Response
-	{
-		return $this->connector->send(new CountriesGet());
-	}
+    public function countriesGet(): Response
+    {
+        return $this->connector->send(new CountriesGet());
+    }
 }
