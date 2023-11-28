@@ -2,9 +2,9 @@
 
 namespace Eele94\Tonic\Tests;
 
+use Eele94\Tonic\TonicServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Eele94\Tonic\TonicServiceProvider;
 
 class TestCase extends Orchestra
 {

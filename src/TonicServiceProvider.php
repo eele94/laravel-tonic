@@ -2,9 +2,9 @@
 
 namespace Eele94\Tonic;
 
+use Eele94\Tonic\Commands\TonicCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Eele94\Tonic\Commands\TonicCommand;
 
 class TonicServiceProvider extends PackageServiceProvider
 {
