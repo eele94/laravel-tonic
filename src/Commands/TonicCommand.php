@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Eele94\Tonic\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class TonicCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-tonic';
 
     public $description = 'My command';
 
