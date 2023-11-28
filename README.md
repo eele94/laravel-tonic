@@ -5,15 +5,8 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/eele/laravel-tonic/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/eele/laravel-tonic/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/eele/laravel-tonic.svg?style=flat-square)](https://packagist.org/packages/eele/laravel-tonic)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
-
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-tonic.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/laravel-tonic)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
+Tonic Integration for Laravel, using for my personal projects.
+Use at your own risk.
 
 ## Installation
 
@@ -55,6 +48,12 @@ php artisan vendor:publish --tag="laravel-tonic-views"
 $tonic = new Eele94\Tonic();
 echo $tonic->echoPhrase('Hello, Eele94!');
 ```
+
+### Integration generate api sdk
+Using sdkgenerator
+
+#### Tonic
+sdkgenerator generate:sdk ./tonic-for-publishers-api-v4.json --type=openapi --name=Tonic --output=./app/Http/Integrations/Tonic --namespace=App\\Http\\Integrations\\Tonic
 
 ## Testing
 
