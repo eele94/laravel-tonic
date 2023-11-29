@@ -42,11 +42,12 @@ Optionally, you can publish the views using
 php artisan vendor:publish --tag="laravel-tonic-views"
 ```
 
-## Usage
+## Usage see unit tests for examples
 
+### GetOffers
 ```php
-$tonic = new Eele94\Tonic();
-echo $tonic->echoPhrase('Hello, Eele94!');
+$tonic = new \Eele94\Tonic\Tonic();
+$response = $tonic->send(new OffersGet());
 ```
 
 ### Integration generate api sdk
