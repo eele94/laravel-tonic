@@ -2,7 +2,7 @@
 
 namespace Eele94\Tonic;
 
-use App\Http\Integrations\Tonic\Tonic as TonicClient;
+use Eele94\Tonic\Api\Tonic as TonicClient;
 
 class Tonic extends TonicClient
 {

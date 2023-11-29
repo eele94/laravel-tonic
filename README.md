@@ -53,7 +53,7 @@ echo $tonic->echoPhrase('Hello, Eele94!');
 Using sdkgenerator
 
 #### Tonic
-sdkgenerator generate:sdk ./tonic-for-publishers-api-v4.json --type=openapi --name=Tonic --output=./app/Http/Integrations/Tonic --namespace=App\\Http\\Integrations\\Tonic
+sdkgenerator generate:sdk ./tonic-for-publishers-api-v4.json --type=openapi --name=Tonic --output=./src/Api --namespace=Eele94\\Tonic\\Api
 
 ## Testing
 
