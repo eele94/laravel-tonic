@@ -22,74 +22,74 @@ use Saloon\Http\Connector;
  */
 class Tonic extends Connector
 {
-	public function resolveBaseUrl(): string
-	{
-		return 'https://api.publisher.tonic.com/v4';
-	}
+    public function resolveBaseUrl(): string
+    {
+        return 'https://api.publisher.tonic.com/v4';
+    }
 
 
-	public function account(): Account
-	{
-		return new Account($this);
-	}
+    public function account(): Account
+    {
+        return new Account($this);
+    }
 
 
-	public function apiCredentials(): ApiCredentials
-	{
-		return new ApiCredentials($this);
-	}
+    public function apiCredentials(): ApiCredentials
+    {
+        return new ApiCredentials($this);
+    }
 
 
-	public function authorization(): Authorization
-	{
-		return new Authorization($this);
-	}
+    public function authorization(): Authorization
+    {
+        return new Authorization($this);
+    }
 
 
-	public function compliance(): Compliance
-	{
-		return new Compliance($this);
-	}
+    public function compliance(): Compliance
+    {
+        return new Compliance($this);
+    }
 
 
-	public function countries(): Countries
-	{
-		return new Countries($this);
-	}
+    public function countries(): Countries
+    {
+        return new Countries($this);
+    }
 
 
-	public function epc(): Epc
-	{
-		return new Epc($this);
-	}
+    public function epc(): Epc
+    {
+        return new Epc($this);
+    }
 
 
-	public function finalization(): Finalization
-	{
-		return new Finalization($this);
-	}
+    public function finalization(): Finalization
+    {
+        return new Finalization($this);
+    }
 
 
-	public function keywords(): Keywords
-	{
-		return new Keywords($this);
-	}
+    public function keywords(): Keywords
+    {
+        return new Keywords($this);
+    }
 
 
-	public function offers(): Offers
-	{
-		return new Offers($this);
-	}
+    public function offers(): Offers
+    {
+        return new Offers($this);
+    }
 
 
-	public function subUserRoles(): SubUserRoles
-	{
-		return new SubUserRoles($this);
-	}
+    public function subUserRoles(): SubUserRoles
+    {
+        return new SubUserRoles($this);
+    }
 
 
-	public function subUsers(): SubUsers
-	{
-		return new SubUsers($this);
-	}
+    public function subUsers(): SubUsers
+    {
+        return new SubUsers($this);
+    }
 }

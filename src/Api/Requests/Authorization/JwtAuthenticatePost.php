@@ -15,18 +15,27 @@ use Saloon\Traits\Body\HasJsonBody;
  */
 class JwtAuthenticatePost extends Request implements HasBody
 {
-	use HasJsonBody;
+    use HasJsonBody;
 
-	protected Method $method = Method::POST;
-
-
-	public function resolveEndpoint(): string
-	{
-		return "/jwt/authenticate";
-	}
+    protected Method $method = Method::POST;
 
 
-	public function __construct()
-	{
-	}
+    public function resolveEndpoint(): string
+    {
+        return "/jwt/authenticate";
+    }
+
+
+    public function defaultBody(): array
+    {
+        return [
+            'consumerKey' => $this->consumerKey,
+            'consumerSecret' => $this->consumerSecret,
+        ];
+    }
+
+
+    public function __construct(protected string $consumerKey, protected string $consumerSecret)
+    {
+    }
 }
