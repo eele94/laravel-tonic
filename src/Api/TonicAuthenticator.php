@@ -36,6 +36,6 @@ class TonicAuthenticator implements Authenticator
         $response = $pendingRequest->getConnector()->send(new JwtAuthenticatePost($this->consumerKey, $this->consumerSecret));
 
         // Finally, authenticate the previous PendingRequest before it is sent.
-        $pendingRequest->headers()->add('Authorization', 'Bearer ' . $response->json('data.accessToken.token'));
+        $pendingRequest->headers()->add('Authorization', 'Bearer '.$response->json('data.accessToken.token'));
     }
 }

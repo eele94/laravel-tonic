@@ -2,7 +2,6 @@
 
 namespace Eele94\Tonic\Api\Requests\Authorization;
 
-use DateTime;
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
@@ -19,12 +18,10 @@ class JwtAuthenticatePost extends Request implements HasBody
 
     protected Method $method = Method::POST;
 
-
     public function resolveEndpoint(): string
     {
-        return "/jwt/authenticate";
+        return '/jwt/authenticate';
     }
-
 
     public function defaultBody(): array
     {
@@ -33,7 +30,6 @@ class JwtAuthenticatePost extends Request implements HasBody
             'consumerSecret' => $this->consumerSecret,
         ];
     }
-
 
     public function __construct(protected string $consumerKey, protected string $consumerSecret)
     {
