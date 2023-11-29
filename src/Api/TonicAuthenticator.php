@@ -22,7 +22,6 @@ class TonicAuthenticator implements Authenticator
                 throw new \Exception('Tonic API Secret is not set.');
             }
         }
-        dd($this->consumerKey, $this->consumerSecret);
     }
 
     public function set(PendingRequest $pendingRequest): void
