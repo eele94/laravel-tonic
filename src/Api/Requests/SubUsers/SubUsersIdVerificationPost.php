@@ -2,7 +2,6 @@
 
 namespace Eele94\Tonic\Api\Requests\SubUsers;
 
-use DateTime;
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
@@ -17,22 +16,20 @@ use Saloon\Traits\Body\HasJsonBody;
  */
 class SubUsersIdVerificationPost extends Request implements HasBody
 {
-	use HasJsonBody;
+    use HasJsonBody;
 
-	protected Method $method = Method::POST;
+    protected Method $method = Method::POST;
 
+    public function resolveEndpoint(): string
+    {
+        return "/subUsers/{$this->id}/verification";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/subUsers/{$this->id}/verification";
-	}
-
-
-	/**
-	 * @param string $id Sub user id
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
+    /**
+     * @param  string  $id Sub user id
+     */
+    public function __construct(
+        protected string $id,
+    ) {
+    }
 }

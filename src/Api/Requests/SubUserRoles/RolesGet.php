@@ -2,7 +2,6 @@
 
 namespace Eele94\Tonic\Api\Requests\SubUserRoles;
 
-use DateTime;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
 
@@ -13,16 +12,14 @@ use Saloon\Http\Request;
  */
 class RolesGet extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return '/roles';
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/roles";
-	}
-
-
-	public function __construct()
-	{
-	}
+    public function __construct()
+    {
+    }
 }

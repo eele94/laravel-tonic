@@ -2,7 +2,6 @@
 
 namespace Eele94\Tonic\Api\Requests\Epc;
 
-use DateTime;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
 
@@ -14,16 +13,14 @@ use Saloon\Http\Request;
  */
 class EpcEstimationUpdateUntilGet extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return '/epc/estimationUpdateUntil';
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/epc/estimationUpdateUntil";
-	}
-
-
-	public function __construct()
-	{
-	}
+    public function __construct()
+    {
+    }
 }
