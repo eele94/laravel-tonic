@@ -9,10 +9,10 @@ return new class extends Migration
 {
     public function up()
     {
-        Schema::create('tonic_offers', function (Blueprint $table) {
+        Schema::create('offers', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->foreignIdFor(TonicVertical::class)->nullable()->constrained();
+            $table->foreignIdFor(TonicVertical::class, 'vertical_id')->nullable()->constrained();
             $table->timestamps();
         });
     }

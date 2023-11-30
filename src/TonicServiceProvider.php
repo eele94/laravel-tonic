@@ -19,8 +19,9 @@ class TonicServiceProvider extends PackageServiceProvider
             ->name('laravel-tonic')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_tonic_verticals_table')
-            ->hasMigration('create_tonic_offers_table')
+            ->hasMigration('create_laravel-tonic_verticals_table')
+            ->hasMigration('create_laravel-tonic_offers_table')
+            ->runsMigrations()
             ->hasCommand(TonicCommand::class);
     }
 }

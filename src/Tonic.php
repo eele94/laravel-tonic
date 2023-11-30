@@ -34,7 +34,7 @@ class Tonic extends TonicClient
                 'id' => $item['id'],
             ], [
                 'name' => $item['name'],
-                'tonic_vertical_id' => $item['vertical']['id'],
+                'vertical_id' => $item['vertical']['id'],
             ]);
         }
     }
