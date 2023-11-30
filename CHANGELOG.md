@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-tonic` will be documented in this file.
 
+## v0.2.0 - 2023-11-30
+
+Sync Verticals and Offers to the database
+
 ## v0.1.0 - 2023-11-30
 
 automatic authentication
