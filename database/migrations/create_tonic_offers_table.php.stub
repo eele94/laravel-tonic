@@ -3,16 +3,16 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Eele94\Tonic\Models\TonicVertical;
 
 return new class extends Migration
 {
     public function up()
     {
-        Schema::create('laravel_tonic_table', function (Blueprint $table) {
+        Schema::create('tonic_offers', function (Blueprint $table) {
             $table->id();
-
-            // add fields
-
+            $table->string('name');
+            $table->foreignIdFor(TonicVertical::class)->nullable()->constrained();
             $table->timestamps();
         });
     }

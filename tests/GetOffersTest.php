@@ -7,3 +7,9 @@ it('can get offers', function () {
     $response = $tonic->send(new OffersGet());
     expect($response->status())->toBe(200);
 });
+
+it('can sync offers', function () {
+    $tonic = new \Eele94\Tonic\Tonic();
+    $tonic->syncOffers();
+    expect(\Eele94\Tonic\Models\TonicOffer::count())->toBeGreaterThan(0);
+});
