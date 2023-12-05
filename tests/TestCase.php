@@ -30,9 +30,9 @@ class TestCase extends Orchestra
         // config()->set('database.default', 'testing');
 
         Schema::dropAllTables();
-        $migration = include __DIR__ . '/../database/migrations/create_laravel-tonic_verticals_table.php';
+        $migration = include __DIR__ . '/../database/migrations/create_tonic_verticals_table.php';
         $migration->up();
-        $migration = include __DIR__ . '/../database/migrations/create_laravel-tonic_offers_table.php';
+        $migration = include __DIR__ . '/../database/migrations/create_tonic_offers_table.php';
         $migration->up();
     }
 }
