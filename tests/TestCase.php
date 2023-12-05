@@ -14,7 +14,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Eele94\\Tonic\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
+            fn (string $modelName) => 'Eele94\\Tonic\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
@@ -30,9 +30,9 @@ class TestCase extends Orchestra
         // config()->set('database.default', 'testing');
 
         Schema::dropAllTables();
-        $migration = include __DIR__ . '/../database/migrations/create_tonic_verticals_table.php';
+        $migration = include __DIR__.'/../database/migrations/create_tonic_verticals_table.php';
         $migration->up();
-        $migration = include __DIR__ . '/../database/migrations/create_tonic_offers_table.php';
+        $migration = include __DIR__.'/../database/migrations/create_tonic_offers_table.php';
         $migration->up();
     }
 }
