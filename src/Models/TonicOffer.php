@@ -13,4 +13,9 @@ class TonicOffer extends \Illuminate\Database\Eloquent\Model
         'name',
         'vertical_id',
     ];
+
+    public function vertical()
+    {
+        return $this->belongsTo(TonicVertical::class);
+    }
 }

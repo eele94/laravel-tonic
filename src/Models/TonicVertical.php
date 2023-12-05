@@ -12,4 +12,9 @@ class TonicVertical extends \Illuminate\Database\Eloquent\Model
         'id',
         'name',
     ];
+
+    public function offers()
+    {
+        return $this->hasMany(TonicOffer::class, 'vertical_id');
+    }
 }
