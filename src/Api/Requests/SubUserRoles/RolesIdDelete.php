@@ -20,7 +20,7 @@ class RolesIdDelete extends Request
     }
 
     /**
-     * @param  int  $id The id of the role
+     * @param  int  $id  The id of the role
      */
     public function __construct(
         protected int $id,

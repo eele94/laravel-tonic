@@ -20,7 +20,7 @@ class SubUsersIdDelete extends Request
     }
 
     /**
-     * @param  int  $id The id of the SubUser to delete
+     * @param  int  $id  The id of the SubUser to delete
      */
     public function __construct(
         protected int $id,

@@ -9,7 +9,7 @@ use Saloon\Http\Response;
 class Finalization extends Resource
 {
     /**
-     * @param  string  $month Month in the format yyyy-mm.
+     * @param  string  $month  Month in the format yyyy-mm.
      */
     public function finalMonthGet(string $month): Response
     {

@@ -20,7 +20,7 @@ class SubUsersIdGet extends Request
     }
 
     /**
-     * @param  int  $id The id of the SubUser
+     * @param  int  $id  The id of the SubUser
      */
     public function __construct(
         protected int $id,

@@ -16,7 +16,7 @@ use Saloon\Http\Response;
 class SubUsers extends Resource
 {
     /**
-     * @param  string  $status Get SubUsers of only one status.<br /><i>Available Values</i> : active, inactive
+     * @param  string  $status  Get SubUsers of only one status.<br /><i>Available Values</i> : active, inactive
      */
     public function subUsersGet(?string $status): Response
     {
@@ -29,7 +29,7 @@ class SubUsers extends Resource
     }
 
     /**
-     * @param  int  $id The id of the SubUser
+     * @param  int  $id  The id of the SubUser
      */
     public function subUsersIdGet(int $id): Response
     {
@@ -37,7 +37,7 @@ class SubUsers extends Resource
     }
 
     /**
-     * @param  int  $id The id of the SubUser to delete
+     * @param  int  $id  The id of the SubUser to delete
      */
     public function subUsersIdDelete(int $id): Response
     {
@@ -45,7 +45,7 @@ class SubUsers extends Resource
     }
 
     /**
-     * @param  int  $id The subuser id
+     * @param  int  $id  The subuser id
      */
     public function subUsersIdPatch(int $id): Response
     {
@@ -53,7 +53,7 @@ class SubUsers extends Resource
     }
 
     /**
-     * @param  string  $id Sub user id
+     * @param  string  $id  Sub user id
      */
     public function subUsersIdVerificationPost(string $id): Response
     {
@@ -61,7 +61,7 @@ class SubUsers extends Resource
     }
 
     /**
-     * @param  int  $id id of the SubUser
+     * @param  int  $id  id of the SubUser
      */
     public function subUsersIdRolesPost(int $id): Response
     {
@@ -69,7 +69,7 @@ class SubUsers extends Resource
     }
 
     /**
-     * @param  int  $id The id of the SubUser
+     * @param  int  $id  The id of the SubUser
      */
     public function subUsersIdRolesDelete(int $id): Response
     {

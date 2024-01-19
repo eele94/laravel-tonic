@@ -24,7 +24,7 @@ class SubUsersIdPatch extends Request implements HasBody
     }
 
     /**
-     * @param  int  $id The subuser id
+     * @param  int  $id  The subuser id
      */
     public function __construct(
         protected int $id,

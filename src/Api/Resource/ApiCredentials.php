@@ -23,7 +23,7 @@ class ApiCredentials extends Resource
     }
 
     /**
-     * @param  int  $id The id of the ApiCredential
+     * @param  int  $id  The id of the ApiCredential
      */
     public function accountApiCredentialsIdGet(int $id): Response
     {
@@ -31,7 +31,7 @@ class ApiCredentials extends Resource
     }
 
     /**
-     * @param  int  $id The id of the ApiCredential
+     * @param  int  $id  The id of the ApiCredential
      */
     public function accountApiCredentialsIdPut(int $id): Response
     {
@@ -39,7 +39,7 @@ class ApiCredentials extends Resource
     }
 
     /**
-     * @param  int  $id The id of the ApiCredential
+     * @param  int  $id  The id of the ApiCredential
      */
     public function accountApiCredentialsIdDelete(int $id): Response
     {

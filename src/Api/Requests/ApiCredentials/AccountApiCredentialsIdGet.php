@@ -20,7 +20,7 @@ class AccountApiCredentialsIdGet extends Request
     }
 
     /**
-     * @param  int  $id The id of the ApiCredential
+     * @param  int  $id  The id of the ApiCredential
      */
     public function __construct(
         protected int $id,

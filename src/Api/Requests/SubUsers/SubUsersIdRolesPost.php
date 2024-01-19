@@ -24,7 +24,7 @@ class SubUsersIdRolesPost extends Request implements HasBody
     }
 
     /**
-     * @param  int  $id id of the SubUser
+     * @param  int  $id  id of the SubUser
      */
     public function __construct(
         protected int $id,

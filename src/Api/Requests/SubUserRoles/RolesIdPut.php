@@ -20,7 +20,7 @@ class RolesIdPut extends Request
     }
 
     /**
-     * @param  int  $id The role id
+     * @param  int  $id  The role id
      */
     public function __construct(
         protected int $id,

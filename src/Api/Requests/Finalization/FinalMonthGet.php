@@ -20,7 +20,7 @@ class FinalMonthGet extends Request
     }
 
     /**
-     * @param  string  $month Month in the format yyyy-mm.
+     * @param  string  $month  Month in the format yyyy-mm.
      */
     public function __construct(
         protected string $month,

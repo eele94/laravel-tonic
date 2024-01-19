@@ -20,7 +20,7 @@ class SubUsersGet extends Request
     }
 
     /**
-     * @param  null|string  $status Get SubUsers of only one status.<br /><i>Available Values</i> : active, inactive
+     * @param  null|string  $status  Get SubUsers of only one status.<br /><i>Available Values</i> : active, inactive
      */
     public function __construct(
         protected ?string $status = null,

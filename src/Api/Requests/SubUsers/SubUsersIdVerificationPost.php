@@ -26,7 +26,7 @@ class SubUsersIdVerificationPost extends Request implements HasBody
     }
 
     /**
-     * @param  string  $id Sub user id
+     * @param  string  $id  Sub user id
      */
     public function __construct(
         protected string $id,

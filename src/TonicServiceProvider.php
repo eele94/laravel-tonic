@@ -3,7 +3,6 @@
 namespace Eele94\Tonic;
 
 use Eele94\Tonic\Commands\SyncTonicOffersCommand;
-use Eele94\Tonic\Commands\TonicCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 

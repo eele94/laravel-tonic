@@ -20,18 +20,18 @@ class KeywordsPerformanceGet extends Request
     }
 
     /**
-     * @param  string  $from Date range from.
-     * @param  string  $to Date range to.
-     * @param  null|string  $orderField Order the result by specific field.<br /><i>Available Values</i> : keyword, clicks, rpc, revenue, revenueUsd
-     * @param  null|string  $orderOrientation The result order direction:<br/>asc - Ascending; from A to Z <br/>desc - Descending; from Z to A
-     * @param  null|string  $keyword Filter for a specific keyword.
-     * @param  null|string  $keywordPart Filter for part of a keyword.
-     * @param  null|int  $campaignIds Filter for a specific campaign with its id<br />Pass multiple values separated by commas.
-     * @param  null|string  $campaignName Filter for a specific campaign with its name or a part of the name. At least 3 characters required
-     * @param  null|string  $countryCodes Filter for a specific country<br />Pass multiple values separated by commas.
-     * @param  null|int  $offerIds Filter for a specific offer with its id<br />Pass multiple values separated by commas.
-     * @param  null|string  $grouping How to group the data. Default is keyword, which is always applied.<br />Pass multiple values separated by commas.<br /><i>Available Values</i> : keyword, campaignId, countryCode, offerId
-     * @param  null|int  $offset The offset of returned paginated data
+     * @param  string  $from  Date range from.
+     * @param  string  $to  Date range to.
+     * @param  null|string  $orderField  Order the result by specific field.<br /><i>Available Values</i> : keyword, clicks, rpc, revenue, revenueUsd
+     * @param  null|string  $orderOrientation  The result order direction:<br/>asc - Ascending; from A to Z <br/>desc - Descending; from Z to A
+     * @param  null|string  $keyword  Filter for a specific keyword.
+     * @param  null|string  $keywordPart  Filter for part of a keyword.
+     * @param  null|int  $campaignIds  Filter for a specific campaign with its id<br />Pass multiple values separated by commas.
+     * @param  null|string  $campaignName  Filter for a specific campaign with its name or a part of the name. At least 3 characters required
+     * @param  null|string  $countryCodes  Filter for a specific country<br />Pass multiple values separated by commas.
+     * @param  null|int  $offerIds  Filter for a specific offer with its id<br />Pass multiple values separated by commas.
+     * @param  null|string  $grouping  How to group the data. Default is keyword, which is always applied.<br />Pass multiple values separated by commas.<br /><i>Available Values</i> : keyword, campaignId, countryCode, offerId
+     * @param  null|int  $offset  The offset of returned paginated data
      */
     public function __construct(
         protected string $from,

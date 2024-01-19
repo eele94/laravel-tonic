@@ -23,7 +23,7 @@ class SubUserRoles extends Resource
     }
 
     /**
-     * @param  int  $id The role id
+     * @param  int  $id  The role id
      */
     public function rolesIdGet(int $id): Response
     {
@@ -31,7 +31,7 @@ class SubUserRoles extends Resource
     }
 
     /**
-     * @param  int  $id The role id
+     * @param  int  $id  The role id
      */
     public function rolesIdPut(int $id): Response
     {
@@ -39,7 +39,7 @@ class SubUserRoles extends Resource
     }
 
     /**
-     * @param  int  $id The id of the role
+     * @param  int  $id  The id of the role
      */
     public function rolesIdDelete(int $id): Response
     {
