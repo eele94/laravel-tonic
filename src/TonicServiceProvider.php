@@ -2,6 +2,7 @@
 
 namespace Eele94\Tonic;
 
+use Eele94\Tonic\Commands\SyncTonicOffersCommand;
 use Eele94\Tonic\Commands\TonicCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
@@ -21,6 +22,6 @@ class TonicServiceProvider extends PackageServiceProvider
             ->hasViews()
             ->hasMigration('create_laravel-tonic_verticals_table')
             ->hasMigration('create_laravel-tonic_offers_table')
-            ->hasCommand(TonicCommand::class);
+            ->hasCommand(SyncTonicOffersCommand::class);
     }
 }
